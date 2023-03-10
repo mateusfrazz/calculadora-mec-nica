@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/style.css" />
+        <link rel="stylesheet" href="/responsividade.css" />
+        <script src="/js/inicio.js"></script>
+        <title>tabelea bennys</title>
+    </head>
+    <body>
+        <div id="principal">
+            <div class="formulario">
+                <form class="tunagem">
+                    <h1>TUNAGEM</h1>
+                    <label>
+                        <input
+                            type="checkbox"
+                            name=" full tunning"
+                            value="400.000"
+                            onclick="calcular()"
+                        />
+                        <span>Full Tunning</span>
+                    </label>
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="blindagem lataria"
+                            value="75.000"
+                            onclick="calcular()"
+                        />
+                        <span> Blindagem Lataria</span>
+                    </label>
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="blindagem pneu"
+                            value="35.000"
+                            onclick="calcular()"
+                        />
+                        <span>Blindagem Pneu</span>
+                    </label>
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="full tunning e blindagem pneu"
+                            value="435.000"
+                            onclick="calcular()"
+                        />
+                        <span>full tunning + blindagem pneu</span>
+                    </label>
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="full tunning e blindagem lataria"
+                            value="80.000"
+                            onclick="calcular()"
+                        />
+                        <span>full tunning + blindagem lataria</span>
+                    </label>
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="full tunning e blindagem full"
+                            value="510.000"
+                            onclick="calcular()"
+                        />
+                        <span>full tunning + blindagem full</span>
+                    </label>
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="motor"
+                            value="100.000"
+                            onclick="calcular()"
+                        />
+                        <span>Motor</span>
+                    </label>
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="Freio"
+                            value="80.000"
+                            onclick="calcular()"
+                        />
+                        <span>Freio</span>
+                    </label>
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="Transmição"
+                            value="80.000"
+                            onclick="calcular()"
+                        />
+                        <span>Transmição</span>
+                    </label>
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="Suspenção"
+                            value="80.000"
+                            onclick="calcular()"
+                        />
+                        <span>Suspenção</span>
+                    </label>
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="Turbo"
+                            value="80.000"
+                            onclick="calcular()"
+                        />
+                        <span>Turbo</span>
+                    </label>
+                </form>
+
+                <form class="estetica">
+                    <h1>ESTETICA INTERIOR</h1>
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="banco"
+                            value="15.000"
+                            onclick="calcular()"
+                        />
+                        <span> Banco</span>
+                    </label>
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="Painel"
+                            value="15.000"
+                            onclick="calcular()"
+                        />
+                        <span>Painel</span>
+                    </label>
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="Enfeites Interior"
+                            value="15.000"
+                            onclick="calcular()"
+                        />
+                        <span>Enfeites Interior</span>
+                    </label>
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="Som porta malas"
+                            value="15.000"
+                            onclick="calcular()"
+                        />
+                        <span>Som porta malas</span>
+                    </label>
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="Som das portas"
+                            value="15.000"
+                            onclick="calcular()"
+                        />
+                        <span>Som Das portas</span>
+                    </label>
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="DVD player"
+                            value="15.000"
+                            onclick="calcular()"
+                        />
+                        <span>DVD player</span>
+                    </label>
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="DECORAÇÃO PONTEIRO"
+                            value="15.000"
+                            onclick="calcular()"
+                        />
+                        <span>DECORAÇÃO PONTEIRO</span>
+                    </label>
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="DECORAÇÃO SOM"
+                            value="15.000"
+                            onclick="calcular()"
+                        />
+                        <span>DECORAÇÃO SOM</span>
+                    </label>
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="DECORAÇÃO CAPO"
+                            value="15.000"
+                            onclick="calcular()"
+                        />
+                        <span>DECORAÇÃO CAPÔ</span>
+                    </label>
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="DECORAÇÃO ENFEITE PAINEL"
+                            value="15.000"
+                            onclick="calcular()"
+                        />
+                        <span>DECORAÇÃO ENFEITE PAINEL</span>
+                    </label>
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="BLOCO DO MOTOR"
+                            value="15.000"
+                            onclick="calcular()"
+                        />
+                        <span>BLOCO DO MOTOR</span>
+                    </label>
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="DECORAÇÃO HR"
+                            value="15.000"
+                            onclick="calcular()"
+                        />
+                        <span>DECORAÇÃO HIDRÁULICA</span>
+                    </label>
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="FILTRO DE AR"
+                            value="15.000"
+                            onclick="calcular()"
+                        />
+                        <span> FILTRO DE AR</span>
+                    </label>
+                </form>
+
+                <form action="" class="estetica">
+                    <h1>ESTÉTICA</h1>
+                    <label>
+                        <input
+                            type="checkbox"
+                            name=" parachoque dianteiro"
+                            value="20.000"
+                            onclick="calcular()"
+                        />
+                        <span>PARACHOQUE DIANTEIRO</span>
+                    </label>
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="parachoque traseiro"
+                            value="20.000"
+                            onclick="calcular()"
+                        />
+                        <span>PARACHOQUE DIANTEIRO</span>
+                    </label>
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="spoiler"
+                            value="15.000"
+                            onclick="calcular()"
+                        />
+                        <span>SPOILER(AEROFÓLIO)</span>
+                    </label>
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="full tunning e blindagem pneu"
+                            value="15.000"
+                            onclick="calcular()"
+                        />
+                        <span>ESCAPAMENTO</span>
+                    </label>
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="saias"
+                            value="20.000"
+                            onclick="calcular()"
+                        />
+                        <span>SAIAS</span>
+                    </label>
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="capo"
+                            value="25.000"
+                            onclick="calcular()"
+                        />
+                        <span>CAPÔ</span>
+                    </label>
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="grelha"
+                            value="20.000"
+                            onclick="calcular()"
+                        />
+                        <span>GRELHA</span>
+                    </label>
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="paralama (fender)"
+                            value="20.000"
+                            onclick="calcular()"
+                        />
+                        <span>PARALAMA (fender)</span>
+                    </label>
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="TETO"
+                            value="40.000"
+                            onclick="calcular()"
+                        />
+                        <span>TETO</span>
+                    </label>
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="SANTO ANTÔNIO"
+                            value="15.000"
+                            onclick="calcular()"
+                        />
+                        <span>SANTO ANTÔNIO</span>
+                    </label>
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="INSUFILM (VIDRO FUMÉ)"
+                            value="40.000"
+                            onclick="calcular()"
+                        />
+                        <span>INSUFILM (VIDRO FUMÉ)</span>
+                    </label>
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="RODAS"
+                            value="20.000"
+                            onclick="calcular()"
+                        />
+                        <span> RODAS</span>
+                    </label>
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="CUSTOMIZAÇÃO PNEU"
+                            value="20.000"
+                            onclick="calcular()"
+                        />
+                        <span>CUSTOMIZAÇÃO PNEU</span>
+                    </label>
+                    <label>
+                        <input
+                            type="checkbox"
+                            name=" BUZINA"
+                            value="15.000"
+                            onclick="calcular()"
+                        />
+                        <span>BUZINA</span>
+                    </label>
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="XENON"
+                            value="15.000"
+                            onclick="calcular()"
+                        />
+                        <span>XENON</span>
+                    </label>
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="NEON"
+                            value="15.000"
+                            onclick="calcular()"
+                        />
+                        <span>NEON</span>
+                    </label>
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="FUMAÇA"
+                            value="15.000"
+                            onclick="calcular()"
+                        />
+                        <span>FUMAÇA</span>
+                    </label>
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="PLACA"
+                            value="15.000"
+                            onclick="calcular()"
+                        />
+                        <span>PLACA</span>
+                    </label>
+                </form>
+                <form action="" class="pintura">
+                    <h1>PINTURA</h1>
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="COR PRIMARIA"
+                            value="20.000"
+                            onclick="calcular()"
+                        />
+                        <span>COR PRIMARIA</span>
+                    </label>
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="COR SECUNDARIA"
+                            value="20.000"
+                            onclick="calcular()"
+                        />
+                        <span>COR SECUNDARIA</span>
+                    </label>
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="CROMADO "
+                            value="20.000"
+                            onclick="calcular()"
+                        />
+                        <span>CROMADO</span>
+                    </label>
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="DECAL"
+                            value="35.000"
+                            onclick="calcular()"
+                        />
+                        <span>DECAL</span>
+                    </label>
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="PINTURA DE RODAS"
+                            value="25.000"
+                            onclick="calcular()"
+                        />
+                        <span>PINTURA DE RODAS</span>
+                    </label>
+                    <div id="id-desconto">
+                        <h1>DESCONTO</h1>
+                        <button type="button" id="desconto">
+                            Adicionar desconto
+                        </button>
+                    </div>
+                </form>
+                <div class="resultados">
+                    <div class="img-box">
+                        <img
+                            class="img-logo"
+                            src="/images/raf_750x1000_075_t_FFFFFF_97ab1c12de-removebg-preview.svg"
+                            alt=""
+                        />
+                    </div>
+                    <div>
+                        <p id="resultado"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
